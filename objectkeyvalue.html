@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let stu = {
+        //     name: 'abhishek',
+        //     age:18
+        // }
+        // console.log(Object.keys(stu))
+        // for(let a of Object.keys(stu) ){
+        //     alert(a)
+
+        // }
+        // for(let a of Object.values(stu) ){
+        //     alert(a)
+
+        // }
+
+
+        
+        let salary = {
+            jan:31,
+            feb:28,
+            mar:31,
+            apr:30,
+            may:31
+        }
+        function sumSalary(salary){
+            let sum=0;
+            for(let value of Object.values(salary)){
+                sum+= value;
+            
+            }
+            return sum;
+        }
+        alert( sumSalary(salary));
+
+
+
+    </script> 
+</body>
+</html>
